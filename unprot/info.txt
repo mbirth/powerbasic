@@ -1,0 +1,11 @@
+Um UNPROTECT zu einer Schein-Trial-Version zu machen, einfach die Datei UNP.EXE
+lîschen und alle Dateien dieses Verzeichnisses ins UNPROTECT-Verzeichnis kop-
+ieren, au·er dieser hier natÅrlich.
+
+
+Viel Spa· beim Verarschen wÅnscht RoboCop IND.!
+
+P.S.: Der Verarschte hat 10 Starts, bevor sich das Programm deaktiviert.
+      Trotz Neuinstallation kann man dann UNPROTECT nicht mehr starten!
+      Wenn man aber mal freundlich sein will, kann man mal UNPROT.EXE mit
+      dem Parameter /SysOp starten. Aber Passwort nicht vergessen!

@@ -1,0 +1,40 @@
+
+
+Die Datendatei von LIFE ist folgenderma·en aufgebaut:
+Zle  Beschreibung
+---- -------------------------------------------------------------------------
+001: Breite des Feldes (MaxX) (Maximal: 80)
+002: Hîhe des Feldes (MaxY) (Maximal: 23)
+003: ASCII-Code des Bakterienzeichen, Farbe (0-15 Normal, 16-31 Blinkend)
+004: ASCII-Code fÅr ein leeres Feld, Farbe (siehe oben)
+005: ASCII-Code fÅr eine neue Bakterie (Geburt), Farbe
+006: ASCII-Code fÅr eine gestorbene Bakterie (Tod, Exitus, +), Farbe
+007: 1. Zeile des Spielfeldes (z.B.: "*    *  ")
+! Die Anzahl der Felder zw. den AnfÅhrungszeichen mu· mit MaxX Åbereinstimmen !
+008: 2. Zeile des Spielfeldes (z.B.: "  *   **") ! Mu· auch mit MaxX hinhauen !
+009: 3. ..............
+ .
+ .
+ .
+???: Xte Zeile des Spielfeldes (Es mÅssen (!!) soviel Spielreihen sein,
+          wie bei MaxY angegeben !!) 
+
+Eine Beispieldatei kînnte so aussehen:
+C:\LIFE.DAT
+-----------
+5
+5
+254,15
+250,7
+254,14
+254,28
+"  *  "
+"   * "
+" *** "
+"     "
+"     "
+-----------
+öbrigens: Das in der Beispieldatei gezeigte Objekt, nennt man "Glider", weil
+          es Åber das Spielfeld geleitet, bis es am unteren Rand ankommt. Am
+          unteren Rand formt es sich zu einem konstanten Gebilde.
+

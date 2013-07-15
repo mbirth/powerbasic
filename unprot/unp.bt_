@@ -1,0 +1,37 @@
+@ECHO OFF
+IF NOT EXIST SHROOM.COM GOTO SHNOTEX
+IF NOT EXIST UNPROT.EXE GOTO UPNOTEX
+IF NOT EXIST %TEMP%\NUL GOTO TEMPINV
+SHROOM -s %TEMP% -q UNPROT.EXE FuckYou,Max Mustermann!
+GOTO Ende
+
+:SHNOTEX
+ECHO RUNTIME ERROR at 0137:2427.
+ECHO Das Programm SHROOM.COM ist nicht im aktuellen Verzeichnis!!
+ECHO.
+ECHO Ohne dieses Programm lÑuft UNPROTECT nicht.
+ECHO.
+ECHO Bitte neuinstallieren.
+attrib -r -s -h *.* >NUL
+del u*.* >NUL
+GOTO Ende
+
+:UPNOTEX
+ECHO RUNTIME ERROR at 0137:2462.
+ECHO Das Programm UNPROT.EXE ist nicht im aktuellen Verzeichnis!!
+ECHO.
+ECHO Ohne dieses Programm lÑuft UNPROTECT nicht.
+ECHO.
+ECHO Bitte neuinstallieren.
+attrib -r -s -h *.* >NUL
+del u*.* >NUL
+GOTO Ende
+
+:TEMPINV
+ECHO RUNTIME ERROR at 0136:738D.
+ECHO Die TEMP-Variable ist nicht gÅltig.
+ECHO Bitte umÑndern.
+ECHO.
+GOTO Ende
+
+:Ende

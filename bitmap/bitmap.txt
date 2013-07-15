@@ -1,0 +1,45 @@
+Header     : 54 Bytes
+Farbtabelle: 1024 Bytes (nur bei 256 Farben)
+Bildinfo   : BxHxX  (siehe Tabelle)
+             ÄÄÄÄÄÄÄ
+Gr”áe      :  H+F+B
+            ÄÍÍÍÍÍÍÍÄ
+
+X Farbtiefe
+- ---------
+1 256 Farben/256 Graustufen/16 Farben
+2 32767 Farben/RealColor
+2 65535 Farben/HighColor
+3 16777216 Farben/TrueColor
+
+256C - 253638 Bytes (siehe unten)
+TC   - 675054 Bytes
+
+
+Byte   256C  TC
+ 02     C6   E6
+ 03     DE   8F
+ 04     03   0B
+ 0B     04   00
+ 1C     08   18
+
+616x410 - 253638 Bytes (ohne Header&Farbtab - 252560)
+308x205 - 63398 Bytes (ohne Header&Farbtab - 63140)
+
+Byte   616x410  308x205
+ 02      C6       A6  Ä·
+ 03      DE       F7   ÇÄ Dateigr”áe (komplett)
+ 04      03       00  Ä½
+ 12      68       30  ÄÒÄ Breite
+ 13      02       01  Ä½
+ 16      9A       CD  ÄÒÄ H”he
+ 17      01       00  Ä½
+ 1C      08       08  ÄÄÄ Farbtiefe (08-8bit, 0F - 16bit, 18-24bit)
+
+Byte(s)    Beschreibung
+---------- ------------------------------------
+0000-0001  Kennung "BM" fr BitMap
+0002-0009  Gr”áe der Datei
+0012-0015  Breite des Bildes
+0016-0019  H”he des Bildes
+  0001C    Anzahl Bits pro Pixel
